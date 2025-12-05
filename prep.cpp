@@ -304,6 +304,8 @@
 // }
 
 //using switch for day week:
+// # include <bits/stdc++.h>
+// using namespace std;
 // int main()
 // {
 //     int n;
@@ -385,4 +387,101 @@
 //     }
 //     return 0;
 // }
+
+//left & Right Shift operator
+// # include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     // int n,c;
+//     // cin>>n;
+//     // int a=12;
+//     // // // c=a*n*n;
+//     // a=a<<n; //left shift operator
+//     // a=a>>n; //right shift operator 
+//     // cout<<a<<endl;
+//     for(int i=0;i<5;i++)
+//     {
+//         continue; //if you want to skip any iteration in loop
+//         //break is like fufa ji who want to exit from loop or forcefully exiting from loop
+//         cout<<"tarun";
+//     }
+// }
+
+//Switch Case
+// # include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n,value;
+//     cin>>n;
+//     value=n;
+//     switch (value)
+//     {
+//         case 1: cout<<"Rahul";
+//         break;
+//         case 2: cout<<"Sohan";
+//         break;
+//         case 3: cout<<"Shankar";
+//         break;
+//         default: cout<<"babbar";
+//         break;
+//     }
+//     cout<<endl;
+// }
+
+//fibonacci Series 
+# include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int size,i,f0=1,f1=2,f2;
+    cin>>size;
+    int a[size];
+    cout<<"the fibonacci Series is"<<f0<<" "<<f1<<" ";
+    for(i=0;i<size-2;i++)
+    {
+        f2=f0+f1;
+        cout<<f2<<" ";
+        f0=f1;
+        f1=f2;
+    }
+    cout<<endl;
+    return 0;
+}
+
+//Find the sum of following sums
+// # include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     //1
+//     int n,i,j;
+//     char ch='x';
+//     float sum1=0,sum2=0,sum3=0,sum4=0,sum5=0,sum6=0,fact=1;
+//     cin>>n;
+//     for(i=1;i<n;i++)
+//     {
+//         sum1=sum1+sqrt(i);
+//         sum2=sum2+pow(i,i);
+//         sum3=sum3+pow(i,2);
+//         sum5=sum5+(1/sqrt(i));
+//     }
+//     for(j=1;j<=n;j++)
+//     {
+//         fact=fact*j;
+//         sum6=sum6+(1/fact);
+//         sum4=sum4+(1/fact);
+//     }
+//     // }
+//     cout<<"1st Series"<<" "<<sum1<<" "<<endl;
+//     cout<<"2nd Series"<<" "<<sum2<<" "<<endl;
+//     cout<<"3rd Series"<<" "<<sum3<<" "<<endl;
+//     cout<<"4th Series"<<" "<<sum4<<" "<<endl;
+//     cout<<"5th Series"<<" "<<sum5<<" "<<endl;
+//     cout<<"6th Series"<<" "<<sum6<<" "<<endl;
+//     return 0;
+// }
+// //A buzz number is a number that either ends with the digit 7 or is divisible by 7.
+
 

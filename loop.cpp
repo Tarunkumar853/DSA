@@ -344,18 +344,18 @@
 //     return 0;
 // }
 
-# include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    int n,fact=1;
-    cin>>n;
-    while(n>0)
-    {
-        fact=fact*n;
-        n--;
-    }
-    cout<<fact<<endl;
-    return 0;
-}
+// # include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n,fact=1;
+//     cin>>n;
+//     while(n>0)
+//     {
+//         fact=fact*n;
+//         n--;
+//     }
+//     cout<<fact<<endl;
+//     return 0;
+// }
 

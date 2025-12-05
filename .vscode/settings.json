@@ -1,5 +1,7 @@
 {
     "files.associations": {
+        "complex": "cpp",
+        "valarray": "cpp",
         "iostream": "cpp"
     }
 }
