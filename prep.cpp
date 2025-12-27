@@ -431,24 +431,24 @@
 // }
 
 //fibonacci Series 
-# include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    int size,i,f0=1,f1=2,f2;
-    cin>>size;
-    int a[size];
-    cout<<"the fibonacci Series is"<<f0<<" "<<f1<<" ";
-    for(i=0;i<size-2;i++)
-    {
-        f2=f0+f1;
-        cout<<f2<<" ";
-        f0=f1;
-        f1=f2;
-    }
-    cout<<endl;
-    return 0;
-}
+// # include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int size,i,f0=1,f1=2,f2;
+//     cin>>size;
+//     int a[size];
+//     cout<<"the fibonacci Series is"<<f0<<" "<<f1<<" ";
+//     for(i=0;i<size-2;i++)
+//     {
+//         f2=f0+f1;
+//         cout<<f2<<" ";
+//         f0=f1;
+//         f1=f2;
+//     }
+//     cout<<endl;
+//     return 0;
+// }
 
 //Find the sum of following sums
 // # include <bits/stdc++.h>
@@ -484,4 +484,204 @@ int main()
 // }
 // //A buzz number is a number that either ends with the digit 7 or is divisible by 7.
 
+//Rotate string -2
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main() {
+//     int N, K;
+//     string S;
+//     cin >> N >> K;
+//     cin >> S;
+//     K = K % N;  // handle large K
+//     // Left rotation
+//     string rotated = S.substr(K) + S.substr(0, K);
+//     cout << rotated<<endl;
+//     return 0;
+// }
+
+//K rotate
+// # include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int l;
+//     cin>>l;
+//     int k=0;
+//     string s,st,b;
+//     cin>>s;
+//     for(int i=0;i<l;i++)
+//     {
+//         if(s[i]>='0' && s[i]<='9')
+//         {
+//             int n=s[i]-48;
+//             cout<<n<<endl;
+//             k = k+(int)pow(n,2);
+//         }
+//         else if(s[i]>=65 && s[i]<=90 || s[i]>=97 && s[i]<=122)
+//         {
+//             st= st + s[i];
+//         }
+//     }
+//     if(k%2==0)
+//     {
+//         k=k%l;
+//     }
+//     cout<<k<<endl;
+//     return 0;
+// }
+
+//Transform string
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin>>n;
+//     string s,str,st;
+//     cin >> s;
+//     for (int i = 0; i < n; i++) {
+//         if (s[i] >= 'A' && s[i] <= 'Z') {
+//             str = str + char(s[i]+32);
+//         }
+//         else if (s[i]>=97 && s[i]<=122 || s[i]>='0' && s[i]<='9')
+//         {
+//             str = str+s[i];
+//         }
+//         else st=st+s[i];
+//     }
+//     cout<<str+st<<endl; 
+//     return 0;
+// }
+
+//Test-2 (a)
+// #include <bits/stdc++.h>
+// using namespace std;
+// int noofsubarray(int arr[], int n)
+// {
+//   int count = 0;
+//   for(int i=0;i<n;i++)
+//   {
+//     int product = arr[i];
+//     int sum = arr[i];
+//     for(int j=i+1;j<n;j++)
+//     {
+//       if(product == sum)
+//       {
+//         count++;
+//       } 
+//       product *=arr[j];
+//       sum +=arr[j];
+//     }
+//     if(product == sum)
+//         count++;
+//   }
+//   return count;
+// }
+// int main() 
+// {
+//     int n;
+//     cin>>n;  
+//     int arr[n];
+//     for(int i =0; i<n; i++)
+//     {
+//       cin>>arr[i];
+//     }
+//     noofsubarray(arr,n);
+//     cout<<noofsubarray(arr,n)<<endl;
+// }
+
+//Unique element
+// # include <bits/stdc++.h>
+// using namespace std;
+// int findunique(vector<int> arr, int n)
+// {
+//     int ans =0;
+//     for(int i=0; i<n;i++)
+//     {
+//         ans=ans^arr[i];
+//     }
+//     return ans;
+// }
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     vector<int> arr(n);
+//     for(int i=0;i<arr.size();i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     int unique_element = findunique(arr,n);
+//     cout<<unique_element<<endl;
+// }
+
+//Intersection-Level1
+// # include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int arr[5]={1,2,3,4,5};
+//     int size_a=5;
+//     int brr[4]={3,4,7,6};
+//     int size_b=4;
+
+//     for(int i=0;i<size_a;i++)
+//     {
+//         for(int j=0;j<size_b;j++)
+//         {
+//             if(arr[i]==brr[j])
+//             {
+//                 cout<<arr[i]<<" ";
+//             }
+//         }
+//     }
+//     cout<<endl;
+// }
+
+
+# include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    // int arr[]={10,20,30,40,50};
+    // int n=sizeof(arr)/sizeof(arr[0]);
+    // cout<<n<<endl;
+
+    // vector<int> list;
+    // list.push_back(10);
+    // list.push_back(20);
+    // list.push_back(30);
+    // for(int i =0;i<list.size();i++)
+    // {
+    //     cout<<list[i]<<" ";
+    // }
+    // cout<<endl;
+
+    // vector<char> v={'a','b','c','d'};
+    // v.push_back(97);
+    // v.push_back(98);
+    // v.push_back(99);
+    // for(char i:v)
+    // cout<<i<<" ";
+    // cout<<endl;
+
+    //traversing
+    // vector<char> v ={'a','b','c','d','e'};
+    // char num;
+    // cin>>num;
+    // if(find(v.begin(),v.end(),num)!=v.end())
+    // cout<<"found"<<endl;
+    // else cout<<"Not Found"<<endl;
+    // return 0;
+
+    //2d vector
+    // vector<vector<int>> matrix = {{1,2,3},{5,6,7},{8,9,10}};
+    // for(vector<int> row: matrix)
+    // {
+    //     for(int i:row)
+    //     cout<<i<<" ";
+    // }
+    // cout<<endl;
+
+}
 

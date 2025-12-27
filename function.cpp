@@ -97,8 +97,7 @@
 // int main()
 // {
 //     int a;
-//     cin>>a;
-    
+//     cin>>a;  
 //     bool check = prime(a);
 //     if(check==true)
 //     {
@@ -135,29 +134,29 @@
 // }
 
 //WAP to check if it is palindrome or not.
-# include <bits/stdc++.h>
-using namespace std;
-int pali(int n)
-{   int b,rev_p=0;
-    while(n>0)
-    {
-        b=n%10;
-        rev_p=rev_p*10 + b;
-        n=n/10;
-    }
-    return rev_p;
-}
-int main()
-{
-    int a,p;
-    cin>>a;
-    p=pali(a);
-    if(p==a)
-    {
-        cout<<p<<" "<< "is palindrome"<<endl; 
-    }
-    else
-    {
-        cout<<p<<" "<< "is not palindrome"<<endl;
-    }
-}
+// # include <bits/stdc++.h>
+// using namespace std;
+// int pali(int n)
+// {   int b,rev_p=0;
+//     while(n>0)
+//     {
+//         b=n%10;
+//         rev_p=rev_p*10 + b;
+//         n=n/10;
+//     }
+//     return rev_p;
+// }
+// int main()
+// {
+//     int a,p;
+//     cin>>a;
+//     p=pali(a);
+//     if(p==a)
+//     {
+//         cout<<p<<" "<< "is palindrome"<<endl; 
+//     }
+//     else
+//     {
+//         cout<<p<<" "<< "is not palindrome"<<endl;
+//     }
+// }
