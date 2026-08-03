@@ -106,31 +106,56 @@
 //     return 0;
 // }
 
-# include <bits/stdc++.h>
-using namespace std;
-int main()
+// # include <bits/stdc++.h>
+// using namespace std;
+// int main()
+
+// // {
+// //     string s1,s2;
+// //     cin>>s1>>s2;
+// //     int n1=stoi(s1);
+// //     int n2=stoi(s2);
+// //     cout<<n1+n2<<endl;
+// //     return 0;
+// // }
 // {
 //     string s1,s2;
 //     cin>>s1>>s2;
-//     int n1=stoi(s1);
-//     int n2=stoi(s2);
-//     cout<<n1+n2<<endl;
+//     int num1,num2;
+//     for(char ch :s1)
+//     {
+//         num1=ch-'0';
+//         num1=num1*10 + num1;
+//     }
+//     for(char ch : s2)
+//     {
+//         num2=ch-'0';
+//         num2=num2*10 + num2;
+//     }
+//     cout<<num1+num2<<endl;
 //     return 0;
 // }
-{
-    string s1,s2;
-    cin>>s1>>s2;
-    int num1,num2;
-    for(char ch :s1)
-    {
-        num1=ch-'0';
-        num1=num1*10 + num1;
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string s;
+    int v = 0, c = 0;
+    getline(cin, s);
+
+    for (char ch : s) {
+        ch = tolower(ch);
+        if (ch >= 'a' && ch <= 'z') {
+            if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+                v++;
+            else
+                c++;
+        }
     }
-    for(char ch : s2)
-    {
-        num2=ch-'0';
-        num2=num2*10 + num2;
-    }
-    cout<<num1+num2<<endl;
-    return 0;
+    cout << "Vowels = " << v << endl;
+    cout << "Consonants = " << c;
 }
+

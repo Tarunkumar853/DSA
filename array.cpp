@@ -341,20 +341,21 @@
 // # include <bits/stdc++.h>
 // using namespace std;
 // void findmissing(int arr[], int n){
-//     // for(int i=0; i<n;i++){
-//     //     int index = abs(arr[i]);
-//     //     if(arr[index-1]>0){
-//     //         arr[index-1]*= -1;
-//     //     }
-//     // }
-//     // for(int i=0; i<n; i++){
-//     //     if(arr[i]>0)
-//     //     {
-//     //         cout<<i+1<<" ";
-//     //     }
-//     // }
-//     // cout<<endl;
+    // for(int i=0; i<n;i++){
+    //     int index = abs(arr[i]);
+    //     if(arr[index-1]>0){
+    //         arr[index-1]*= -1;
+    //     }
+    // }
+    // for(int i=0; i<n; i++){
+    //     if(arr[i]>0)
+    //     {
+    //         cout<<i+1<<" ";
+    //     }
+    // }
+    // cout<<endl;
 //
+//     --2nd method--
 //     int i=0;
 //     while(i<n)
 //     {
@@ -382,5 +383,27 @@
 //     return 0;
 // }
 
-//Find the first repeating element
+#include <iostream>
+using namespace std;
+
+int gcd(int a, int b) {
+    if (b == 0)
+        return a;          // Base condition
+    else
+        return gcd(b, a % b);   // Recursive call
+}
+
+int main() {
+    int x, y;
+    cout << "Enter two numbers: ";
+    cin >> x >> y;
+
+    cout << "GCD = " << gcd(x, y);
+    return 0;
+}
+
+
+
+
+
 

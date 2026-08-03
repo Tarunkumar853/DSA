@@ -96,7 +96,7 @@
 //     return 0;
 // }
 
-//Nested loop for   Continous 
+//Nested loop for Continous 
 // # include <bits/stdc++.h>
 // using namespace std;
 // int main()
@@ -240,12 +240,6 @@
 //        sum+=i;
 //     }
 //     return sum;
-// }
-
-// int main()
-// {
-//     cout << SumN(55) <<endl;
-//     return 0;
 // }
 
 //calculate the factorial of N!
