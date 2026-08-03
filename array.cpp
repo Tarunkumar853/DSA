@@ -383,24 +383,23 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
+// int gcd(int a, int b) {
+//     if (b == 0)
+//         return a;          // Base condition
+//     else
+//         return gcd(b, a % b);   // Recursive call
+// }
+// int main() {
+//     int x, y;
+//     cout << "Enter two numbers: ";
+//     cin >> x >> y;
+//     cout << "GCD = " << gcd(x, y);
+//     return 0;
+// }
 
-int gcd(int a, int b) {
-    if (b == 0)
-        return a;          // Base condition
-    else
-        return gcd(b, a % b);   // Recursive call
-}
 
-int main() {
-    int x, y;
-    cout << "Enter two numbers: ";
-    cin >> x >> y;
-
-    cout << "GCD = " << gcd(x, y);
-    return 0;
-}
 
 
 
