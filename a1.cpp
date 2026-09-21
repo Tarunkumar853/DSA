@@ -34,6 +34,4 @@ int main(){
 
     vector<int> arr{1,2,4,2,1,3,6,5,5,6,4};
     vector<int> brr{1,2,4,4};
-
-    cout<<arr.con
 }
