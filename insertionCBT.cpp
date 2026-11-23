@@ -18,7 +18,7 @@ void insertCBT(node*& root, int value, queue<node*>& q) {
 
     if (root == NULL) {
         root = newNode;
-        q.push(root);
+        q.push(root); 
         return;
     }
 

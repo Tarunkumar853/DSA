@@ -73,7 +73,7 @@ int main()
         switch(choice)
         {
             case 1:
-                push();₹    
+                push();
                 break;
 
             case 2:
